@@ -1,0 +1,110 @@
+<html>
+<head> 
+<title> E-Voting </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="topnavbar fixed-top navbar-header page-scroll">
+    <a class="navbar-brand ml-4" href="#">
+        <img src="pictures/download.png" class="rounded" alt="Logo" style="width:40px;">
+      </a>
+            <div class="nav-links mr-3">
+                <ul>
+                    <li> <a href="#"> Home </a></li>
+                    <li> <a href="#"> About </a></li>
+                    <li> <a href="#"> Developer </a></li>
+                    <li> <a href="#"> Contact</a></li>
+                </ul>
+            </div>
+        </nav>    
+    </br> </br> <br>
+<h3 class="text-center text-success"> You must login to <span class="vote">vote ! </span></h3>
+    <div class="container-fluid my-4">
+    <div class="row">
+        <div class="col-md-6 ml-3">
+        <h3 class="text-center mb-4 text-secondary"><u> Total Votes </u></h3>
+            <div class="row mr-1">
+                <div class="col-md-4 mb-4">
+                    <div class="container">
+                    <div class="card" style="width:195px; height:282px">
+                    <img class="card-img-top mx-4 mt-3" src="pictures/download (1).png" alt="Card image" style="width:122px" height="124px">
+                    <div class="card-body">
+                    <h4 class="card-title">BJP</h4>
+                    <p class="card-text">Bhartiya Janta Party.</p>
+                    <p> 0 </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                    <div class="container">
+                    <div class="card" style="width:195px; height:282px">
+                    <img class="card-img-top mx-4 mt-3" src="pictures/2.png" alt="Card image" style="width:122px" height="124px">
+                    <div class="card-body">
+                    <h4 class="card-title">BSP</h4>
+                    <p class="card-text">Bahujan Samaj Party</p>
+                    <p> 0 </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                    <div class="container">
+                    <div class="card" style="width:195px; height:282px">
+                    <img class="card-img-top mx-4 mt-3" src="pictures/download (2).png" alt="Card image" style="width:122px" height="124px">
+                    <div class="card-body">
+                    <h4 class="card-title">BCP</h4>
+                    <p class="card-text">Congress Party.</p>
+                    <p> 0 </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                    <div class="container">
+                    <div class="card" style="width:195px; height:282px">
+                    <img class="card-img-top mx-4 mt-3" src="pictures/1554915296.png" alt="Card image" style="width:122px" height="124px">
+                    <div class="card-body">
+                    <h4 class="card-title">AAP</h4>
+                    <p class="card-text">Aam Aadmi Party</p>
+                    <p> 0 </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+</div>
+</div>
+    <!--------------------------------- Login Form ----------------------------------------------->
+                <div class="col-md-3 offset-md-2 my-2 ">
+                    <h3 class="text-center mb-4 text-white"> Login Here </h3>
+        
+                <form action="validation.php" method="POST" class="lgin px-3 py-5">
+                <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                <label for="pswrd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswrd">
+                </div>
+
+                <button type="submit" class="btn btn-success my-4 logbtn text-dark">Submit</button>
+                <h6 style="font-size: 14px;"> Not having account? <a href="regist.html"> Register yourself here </a> </h6>
+                </form>
+
+</div>
+</body>
+</html>
+

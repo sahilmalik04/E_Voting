@@ -1,0 +1,160 @@
+<html>
+<head> 
+<title> Register.in </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(pictures/PqICny.jpg);
+    background-size: cover;
+}
+  </style>
+</head>
+
+<body>
+
+<nav class="topnavbar fixed-top navbar-header page-scroll">
+    <a class="navbar-brand ml-4" href="#">
+        <img src="pictures/download.png" class="rounded" alt="Logo" style="width:40px;">
+      </a>
+            <div class="nav-links mr-3">
+                <ul>
+                    <li> <a href="#"> Home </a></li>
+                    <li> <a href="#"> About </a></li>
+                    <li> <a href="#"> Developer </a></li>
+                    <li> <a href="#"> Contact</a></li>
+                </ul>
+            </div>
+        </nav>    
+<br> <br> <br> <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 offset-md-2 offset-0">
+        
+            <form class="form bg-light" action="register.php" method="POST">
+            <h4 class="text-center mb-0"> Register Yourself </h4> <hr>
+                <table class="table table-hover table-active">
+                <tr>
+
+                    <td> <label for="username"> Username: </label> </td>
+                   <td> <input type="text" id="username" name="username" required="true"> </td>
+
+                    <td> <label for="name"> Name: </td>
+                    <td> <input type="text" id="name" name="name" required="true"> </td> </label>
+
+                <tr>
+
+                    <td><label for="lstname"> Last name: </label> </td>
+                    <td><input type="text" id="lstname" name="lstname" required="true"> </td>
+
+                    <td> <label for="pswrd"> Password: </label> </td>
+                    <td> <input type="password" id="pswrd" name="pswrd" required="true"> </td>
+    
+                </tr>
+
+                <tr>
+
+                    <td> <label for="cnfrmpswrd"> Confirm Password: </label> </td>
+                    <td> <input type="password" id="cnfrmpswrd" name="cpswrd" required="true"> </td>    
+
+                     <td> <label for="phone"> Mobile: </label> </td>
+                    <td> <input type="telephone" id="phone" name="phone" required="true"> </td>         
+    
+                </tr>
+
+                <tr>
+
+                    <td> <label for="email"> Email: </label> </td>
+                    <td> <input type="email" id="email" name="email" required="true"> </td>
+
+                    <td> <label for="dob"> Date of Birth: </label></td>
+                    <td> <input type="date" id="dob" name="dob" required="true"> </td>
+
+                </tr>
+
+                <tr>
+
+                    <td> <label for="adress"> Permanent Address: </label></td>
+                    <td> <textarea rows="2" cols="22" id="adress" name="address">  </textarea></td>
+
+                    <td> <label> City: </label></td>
+                    <td> <select name="city" required="true">
+                            <option> </option>
+                            <option value="delhi"> Delhi 
+                            <option value="mumbai"> Mumbai
+                            <option value="delhi"> Delhi
+                            <option value="ambala"> Ambala
+                            <option value="bangalore"> Bangalore
+                            <option value="hyderabad"> Hyderabad
+                            <option value="ahmedabad"> Ahmedabad
+                            <option value="kurukshetra"> Kurukshetra
+                            <option value="chennai"> Chennai
+                            <option value="kolkata"> Kolkata
+                            <option value="pune"> Pune
+                            <option value="jaipur"> Jaipur
+                            <option value="lucknow"> Lucknow
+                            <option value="ludhiana"> Ludhiana
+                            
+                            </option> </selection>
+                    </td>
+                </tr>
+
+                <tr>
+
+                <td> <label> State: </label></td>
+                <td> <select name="state" required="true">
+                    <option></option>
+                    <option value="mp"> Madhya Pradesh	
+                    <option value="maharashtra"> Maharashtra	
+                    <option value="up"> Uttar Pradesh	
+                    <option value="gujarat">Gujarat
+                    <option value="ap">Andhra Pradesh
+                    <option value="chhattisgarh">Chhattisgarh	
+                    <option value="tamil">Tamil Nadu		
+                    <option value="bihar">Bihar	
+                    <option value="west bengal">West Bengal	
+                    <option value="jharkhand">Jharkhand	
+                    <option value="assam">Assam	
+                    <option value="hm">Himachal Pradesh
+                    <option value="jammu">Jammu and Kashmir
+                    <option value="uttrakhand">Uttarakhand	
+                    <option value="punjab">Punjab	
+                    <option value="haryana">Haryana			
+                    <option value="goa">Goa			
+                    <option value="chandigarh">Chandigarh	
+                        </option> </select>
+                </td>
+                   
+                <td>  <label> Country:  </label> </td>
+                <td> 
+                    <select name="country" required="true"> 
+                        <option> </option>
+                        <option value="australia"> Austraila</option>
+                        <option value="bangladesh"> Bangladesh </option>
+                        <option value="canada"> Canada </option>
+                        <option value="england"> England</option>
+                        <option value="pakistan"> Pakistan </option>
+                        <option value="india"> India </option>
+                        <option value="usa"> USA </option>
+                
+                    </select>
+                </td>
+
+                </tr>
+
+            </table>
+
+            <div class="d-flex justify-content-around mb-3 pb-3">
+                <button class="btn-success w-25 mt-1"> Submit </button>
+                </div>
+
+        </form>
+</div>
+</div>
+</div>

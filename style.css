@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(pictures/PqICny.jpg);
+    background-size: cover;
+}
+.topnavbar{
+    background: rgba(87, 85, 85, 0.445);
+}
+.nav-links{
+    top: 14px;
+    float: right;
+    position: relative;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.nav-links ul li a{
+    color: rgb(235, 231, 231);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.nav-links ul li a:hover{
+    text-decoration: none;
+    background-color: rgba(78, 204, 40, 0.575);
+}
+.lgin{
+    background:  linear-gradient(to right, rgba(204, 201, 201, 0.8), rgba(78, 204, 40, 0.541));
+}
+.logbtn{
+    background:  #FF9933;
+    font-weight: bold;        
+}
+.logbtn:hover{
+    background:  #da8531;
+}
+.frm{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.vote{
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    0%{ 
+        opacity: 0; 
+      } 
+      50%{ 
+        opacity: 0.7; 
+      } 
+      100%{ 
+        opacity: 0; 
+      } 
+}
